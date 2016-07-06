@@ -1,0 +1,76 @@
+/*------------------------------------*\
+  SECTION STREET
+\*------------------------------------*/
+.street {
+   padding:50px 0;
+
+   @media screen and (min-width: $tablet) {
+      padding:100px 0;
+   }
+
+   .container {
+      &:after {
+         content:"";
+         background:url(../picture/street_dance.png) center no-repeat;
+         background-size:contain;
+         display: block;
+         position: absolute;
+         width: 310px;
+         height: 510px;
+         top: -120px;
+         right: -50px;
+
+         @media screen and (min-width: $tablet) {
+            width: 570px;
+            height: 930px;
+            right: -30px;
+            top: -300px;
+         }
+
+         @media screen and (min-width: $desktop) {
+            top: -390px;
+            right: 80px;
+         }     
+      }
+   }
+ 
+   &__title{
+      font-family: $font-condensed;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 20px;
+      padding-bottom:30px;
+      position: relative;
+      z-index: 20;
+
+      @media screen and (min-width: $tablet) {
+         font-size: 42px;
+      }
+   }
+
+   &__text {
+      font-size: 13px;
+      line-height: 20px;
+      font-weight: 300;
+      width: 60%;
+      position: relative;
+      z-index: 50;
+
+      @media screen and (min-width: $tablet) {
+         font-size: 22px;
+         line-height: 35px;
+      }
+
+      span {
+         margin-bottom:20px;
+         display: block;
+         width: 75%;
+
+         @media screen and (min-width: $tablet) {
+            width: 60%;
+            font-size: 22px;
+            line-height: 35px;
+         }
+      }
+   }
+}

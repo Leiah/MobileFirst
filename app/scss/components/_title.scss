@@ -1,0 +1,38 @@
+/*------------------------------------*\
+  TITLE
+\*------------------------------------*/
+.title {
+   font-family: $font-condensed;
+   font-size: 30px;
+   padding-bottom:55px;
+   font-weight: 600;
+   text-transform: uppercase;
+
+   &--section {
+      font-family: $font-condensed;
+      font-size: 30px;
+      padding-top:40px;
+      padding-bottom: 40px;
+      font-weight: 600;
+      text-transform: uppercase;
+      border-top: 12px solid black;
+      clear: both;
+
+      @media screen and (min-width: $tablet) {
+         font-size: 44px;
+         margin-top:100px;
+         padding-bottom:120px;
+
+      }
+   }
+
+   @media screen and (min-width: $tablet) {
+      font-size: 44px;
+      padding-bottom:120px;
+   }
+}
+
+strong {
+   font-family: $font-condensed;
+   font-weight: 600;
+}

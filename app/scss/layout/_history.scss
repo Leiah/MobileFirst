@@ -1,0 +1,113 @@
+/*------------------------------------*\
+  SECTION HISTOIRE
+\*------------------------------------*/
+.history {
+   text-align: center;
+   padding-bottom:50px;
+   position: relative;
+
+   &__headband {
+      display: block;
+      height: 179%;
+      width: 245px;
+      background: #66ffff;
+      position: absolute;
+      left:-16%;
+      top: 31px;
+      opacity: 0.8;
+      transform: translate(-50%, -50%);
+      transform: skewX(-20deg);
+      z-index: 10;
+
+      @media screen and (min-width: $tablet) {
+         display: block;
+         height: 100%;
+         width: 170px;
+         background: #66ffff;
+         position: absolute;
+         left:50%;
+         top: 6px;
+         opacity: 0.8;
+         transform: translate(-50%, -50%);
+         transform: skewX(-45deg);
+         z-index: 10;
+      }
+   }
+
+   &__container {
+      margin-top:45px;
+      border-bottom:4px solid black;
+      display: inline-block;
+      position: relative;
+       margin-left: 3%;
+       margin-right: 3%;
+      
+
+      @media screen and (min-width: $tablet) {
+         margin-top:80px;
+         border:4px solid black;
+         display: inline-block;
+         min-width: 700px;
+         margin-left: 0%;
+      }
+
+      p {
+         font-size: 13px;
+         padding:10% 5% 15% 0;
+         line-height: 20px;
+         text-align: left;
+         position: relative;
+         z-index: 50;
+         
+         @media screen and (min-width: $tablet) {
+            padding:10% 5% 5% 30%;
+            font-size: 16px;
+            line-height: 28px;
+            max-width: 345px;
+            text-align: left;
+            position: relative;
+            z-index: 50;
+            box-sizing:initial;
+         }
+      }
+
+      &:before { // Title
+         content:"Histoire";
+         position: absolute;
+         top: -10px;
+         left: 0px;
+         font-family: $font-regular;
+         text-transform: uppercase;
+         font-weight: 600;
+         font-size: 26px;
+         z-index: 60;
+
+         @media screen and (min-width: $tablet) {
+            font-size: 48px;
+            right: 100px;
+            left: auto;
+            top: -48px;
+         }
+      }
+
+      &:after { // Picture 
+         content:"";
+         background:url(../picture/img_home.jpg) no-repeat center;
+         background-size:contain;
+         display: block;
+         z-index: -1;
+         position: absolute;
+         width: 230px;
+         height: 347px;
+         left: -70px;
+         top: -40px;
+
+         @media screen and (min-width: $tablet) {
+            width: 320px;
+            height: 477px;
+            left: 60px;
+            top: -60px;
+         }
+      }
+   }
+}

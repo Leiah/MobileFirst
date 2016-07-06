@@ -1,0 +1,103 @@
+/*------------------------------------*\
+  HEADER
+\*------------------------------------*/
+header {
+   width:100%;
+   height: 100vh;
+   position: relative;
+   background:url(../picture/marie9.jpg) no-repeat center;
+   background-size:cover;
+   margin-bottom:80px;
+    @media screen and (min-width: $desktop) {
+         background:url(../picture/marie4.jpg) no-repeat center;
+        background-size: cover;
+    }
+        
+}
+
+.bubble {
+   border-radius : 50%;
+   width:310px;
+   height:310px;
+   position: absolute;
+   background-color:rgba(234,20,140,0.6);
+   transform: translate(-50%, -50%);
+   left:50%;
+   top: 50%;
+   text-align: center;
+
+   
+   @media screen and (min-width: $tablet) {
+      width:550px;
+      height:550px;
+      position: absolute;
+   }
+
+
+   &__logo {
+      width:160px;
+      position:relative;
+      top:-50px;
+
+      @media screen and (min-width: $tablet) {
+         width:247px;
+         left: -40px;
+         top:10px;
+      }
+   }
+
+   &__baseline {
+      @include font($font-regular, white, 300, 16px, 20px, normal);
+      list-style : none;
+      position: relative;
+      display:inline-block;
+      text-align:left;
+      top:-30px;
+      font-weight: 300;
+      left : 10px;
+      margin: 0;
+      padding: 0;
+
+      @media screen and (min-width: $tablet) {
+		 
+         @include font($font-regular, white, 300, 30px, 40px, normal);
+         top:20px;
+         left : 10px;
+      }
+      
+      li {
+         &:nth-child(2) {
+            padding-left:18px;
+
+            @media screen and (min-width: $tablet) {
+               padding-left:20px;
+            }
+         }
+
+         &:nth-child(3) {
+            padding-left:38px;
+
+            @media screen and (min-width: $tablet) {
+               padding-left:35px;
+            }
+         }
+
+         &:nth-child(4) {
+            padding-left:150px;
+
+            @media screen and (min-width: $tablet) {
+               padding-left:245px;
+            }
+         }
+
+         span {
+            font-family: $font-condensed;
+            font-weight: 500;
+         }
+
+         i {
+            font-style: italic;
+         }
+      }
+   }
+}

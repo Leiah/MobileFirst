@@ -1,0 +1,73 @@
+/*------------------------------------*\
+  NAVBAR
+\*------------------------------------*/
+.navbar {
+   background: black;
+   top: 0;
+   left: 0;
+   right: 0;
+   z-index: 100;
+   position: fixed;
+
+   &__logo {
+      display: block;
+      width: 35px;
+      height: 60px;
+      background : url(../picture/header_logo.png) no-repeat center;
+      background-size:contain;
+      float: left;
+      margin-left:10px;
+   }
+
+   &__menu {
+      float: right;
+      display: none;
+
+      @media screen and (min-width: $tablet) {
+         display: block;
+      }
+
+      li {
+         display: inline-block;
+         padding:26px 10px;
+
+         a {
+            color:white;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 16px;
+            font-family: $font-condensed;
+         }
+      }
+   }
+}
+
+.menu__open {
+   width: 100%;
+
+   li {
+      display: block;
+      padding:15px 10px;
+   }
+}
+
+.responsive {
+   display: block;
+   float: right;
+   padding: 18px;
+
+   @media screen and (min-width: $tablet){
+      display: none;
+   }
+
+   &__bar {
+      border-radius:30px;
+      display: block;
+      background-color:#FFFFFF;
+      height: 3px;
+      margin: 4px 0;
+      width: 30px;
+      cursor: pointer;
+   }
+}
